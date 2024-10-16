@@ -1,0 +1,198 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #131314;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+body::before{
+    content: '';
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background: url(images/main.jpg)no-repeat center center/cover ;
+    backdrop-filter: blur(5px);
+    opacity: .40;
+
+}
+
+header{
+    position:relative;
+    width: 90%;
+    height: 90%;
+    border: 4px solid rgb(65, 64, 64);
+    border-radius: 20px;
+    z-index: 2;
+}
+header .content{
+    color: white;
+    align-content: center;
+}
+
+header .main_img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    
+}
+header .line{
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    background: rgb(65, 64, 64);
+    left: 45%;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .line .spike{
+
+    width: 30px;
+    height: 3px;
+    background: white;
+     
+    border-radius: 50px;
+}
+
+header nav{
+    width:90% ;
+    height: 9%;
+    /* border: 3px solid gray; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .brand{
+    color: rgb(223, 124, 31);
+    width: 20%;
+    height: 100%;
+    font-size: 30px;
+    font-family: system-ui ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  
+}
+header nav ul{
+    width:60% ;
+    height: 100%;    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header nav ul li{
+    list-style-type: none;
+    padding: 3px 10px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "system-ui";
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+header nav ul li a:hover{
+    color: rgb(65, 64, 64);
+   
+}
+
+header nav .search{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+header nav .search input{
+    width: 90%;
+    padding: 5px 0px 3px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+
+/* Styles for the Genre Container */
+header .genre-container {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header .genre-container h2 {
+    margin-bottom: 10px;
+    font-family: system-ui;
+    color: rgb(223, 124, 31);
+}
+
+/* Apply the same padding and alignment for genres */
+ header .genre-container ul {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+header .genre-container ul li {
+    list-style-type: none;
+    padding: 3px 10px; /* Same padding as your nav items */
+    margin: 5px;
+}
+
+header .genre-container ul li a {
+    color: rgb(165, 164, 164);
+    text-decoration: none;
+    font-family: system-ui;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+header .genre-container ul li a:hover {
+    color: white;
+}
+
+
+
+
+
+header .cards{
+    display: flex;
+    margin-top:10px ;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+header .cards .card{
+    flex-basis: 250px;
+    background-color: rgb(65, 64, 64);
+    padding: 3px;
+    border-radius: 8px;
+}
+header .cards .card img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
